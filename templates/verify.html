@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block title %}Verify a Certificate — Organization of Choice™{% endblock %}
+{% block description %}Instantly verify any OOC certificate is genuine, current, and issued by the Organization of Choice program.{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__inner text-center">
+      <div class="section-label page-hero__label" style="justify-content:center;">Verification</div>
+      <h1 class="page-hero__title anim-fade-up"><em>Certificate Verification</em></h1>
+      <p class="page-hero__sub anim-fade-up delay-1" style="margin:0 auto;">Enter the certificate ID printed on an OOC certificate — or scan the QR code — to instantly confirm that this certification is genuine and currently valid.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VERIFY FORM -->
+<section class="section section-cream">
+  <div class="container">
+    <div class="verify-wrap">
+      <div class="verify-box">
+
+        <div style="width:64px;height:64px;border-radius:50%;background:var(--mint-bg);border:2px solid var(--mint);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.75rem;color:var(--sage);">
+          <i class="fa-solid fa-certificate"></i>
+        </div>
+
+        <h2>Verify a Certificate</h2>
+        <p style="margin:.75rem 0 0;">Enter the certificate ID or scan the QR code from your OOC certificate.</p>
+
+        <form id="verify-form" novalidate>
+          <div class="verify-input-group">
+            <input type="text" id="cert-id" name="cert_id" placeholder="e.g. OOC-2026-DEMO-001" autocomplete="off" spellcheck="false">
+            <button type="submit">Verify</button>
+          </div>
+        </form>
+
+        <div id="verify-result"></div>
+
+        <p style="font-size:.78rem;color:var(--ink-muted);margin-top:1.5rem;line-height:1.65;">
+          The OOC certificate verification system is maintained in real time. All active certificates are listed in our database. Expired certificates are archived and remain verifiable for historical reference.
+        </p>
+
+        <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--border);">
+          <p style="font-size:.8rem;color:var(--ink-muted);">
+            Can't find a certificate? <a href="/contact" style="color:var(--sage);text-decoration:underline;">Contact our team</a> for assistance.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Demo hint -->
+    <div style="text-align:center;margin-top:2rem;">
+      <p style="font-size:.8rem;color:var(--ink-muted);font-style:italic;">
+        Demo: Try entering <code style="background:var(--sand);padding:.15rem .4rem;border-radius:4px;font-family:monospace;font-size:.8rem;">OOC-2026-DEMO-001</code> to see a successful verification.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- HOW TO FIND YOUR ID -->
+<section class="section">
+  <div class="container--sm">
+    <h3 style="margin-bottom:1.5rem;text-align:center;">Where to Find the Certificate ID</h3>
+    <div class="grid-3">
+      <div style="text-align:center;padding:1.5rem;">
+        <div style="width:48px;height:48px;background:var(--mint-bg);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:1.25rem;color:var(--sage);">
+          <i class="fa-solid fa-file-certificate"></i>
+        </div>
+        <h4 style="font-size:.9rem;margin-bottom:.4rem;">On the Certificate</h4>
+        <p style="font-size:.825rem;">The unique certificate ID is printed at the bottom of every OOC digital certificate.</p>
+      </div>
+      <div style="text-align:center;padding:1.5rem;">
+        <div style="width:48px;height:48px;background:var(--mint-bg);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:1.25rem;color:var(--sage);">
+          <i class="fa-solid fa-qrcode"></i>
+        </div>
+        <h4 style="font-size:.9rem;margin-bottom:.4rem;">Scan the QR Code</h4>
+        <p style="font-size:.825rem;">Scan the QR code on any OOC certificate with your phone to reach this verification page instantly.</p>
+      </div>
+      <div style="text-align:center;padding:1.5rem;">
+        <div style="width:48px;height:48px;background:var(--mint-bg);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:1.25rem;color:var(--sage);">
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <h4 style="font-size:.9rem;margin-bottom:.4rem;">Via LinkedIn or Website</h4>
+        <p style="font-size:.825rem;">Organizations often share their certificate ID alongside their OOC badge on LinkedIn and their careers page.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-pine">
+  <div class="container text-center">
+    <h2 style="color:var(--white);margin-bottom:1rem;">Is Your Organization OOC Certified?</h2>
+    <p style="color:rgba(255,255,255,0.62);max-width:480px;margin:0 auto 2rem;">Apply for assessment and earn your independent OOC recognition — a certificate your stakeholders can verify in seconds.</p>
+    <a href="/apply" class="btn btn-primary btn-lg">Apply for Assessment <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</section>
+
+{% endblock %}

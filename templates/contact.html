@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% block title %}Contact Us — Organization of Choice™{% endblock %}
+{% block description %}Whether you have a question about the program, want to understand if OOC is right for your organization, or are ready to apply — we are here.{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__inner">
+      <div class="section-label page-hero__label">Contact</div>
+      <h1 class="page-hero__title anim-fade-up">We Would Love to<br><em>Hear From You</em></h1>
+      <p class="page-hero__sub anim-fade-up delay-1">Whether you have a question about the program, want to understand if OOC is right for your organization, or are ready to apply — we are here. Our team responds to all enquiries within one working day.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-cream">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Form -->
+      <div>
+        <div class="contact-form-box">
+          <h3 style="margin-bottom:.25rem;">Send Us a Message</h3>
+          <p style="font-size:.875rem;color:var(--ink-muted);margin-bottom:2rem;">All fields marked <span style="color:var(--gold);">*</span> are required.</p>
+
+          <form id="contact-form" novalidate>
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Full Name <span class="req">*</span></label>
+                <input class="form-input" type="text" id="contact-name" name="full_name" required placeholder="Your full name">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-org">Organization Name <span class="req">*</span></label>
+                <input class="form-input" type="text" id="contact-org" name="org_name" required placeholder="Your organization">
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Work Email <span class="req">*</span></label>
+                <input class="form-input" type="email" id="contact-email" name="email" required placeholder="yourname@organization.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-country">Country <span class="req">*</span></label>
+                <select class="form-select" id="contact-country" name="country" required>
+                  <option value="" disabled selected>Select country</option>
+                  <option>Australia</option><option>Canada</option><option>Germany</option>
+                  <option>India</option><option>Singapore</option><option>South Africa</option>
+                  <option>United Kingdom</option><option>United States</option><option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Subject <span class="req">*</span></label>
+              <select class="form-select" id="contact-subject" name="subject" required>
+                <option value="" disabled selected>Select subject</option>
+                <option value="general">General Enquiry</option>
+                <option value="application">Application Question</option>
+                <option value="partnership">Partnership</option>
+                <option value="media">Media &amp; Press</option>
+                <option value="assessor">Assessor Network</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Your Message <span class="req">*</span></label>
+              <textarea class="form-textarea" id="contact-message" name="message" required placeholder="Tell us how we can help&hellip;" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+
+          <!-- Success state -->
+          <div class="success-box" id="contact-success">
+            <span class="success-icon"><i class="fa-solid fa-circle-check" style="color:var(--sage);"></i></span>
+            <h3 style="margin-bottom:.75rem;color:var(--pine);">Message Sent — Thank You</h3>
+            <p>Our team will respond to your message within one working day, Monday through Friday.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Info panel -->
+      <div class="contact-info-panel">
+
+        <div style="background:var(--forest);border-radius:var(--r-lg);padding:2rem;margin-bottom:2rem;">
+          <p style="font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light);margin-bottom:0.875rem;">Response Time</p>
+          <div class="response-time-note" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);">
+            <i class="fa-regular fa-clock" style="color:var(--gold-light);"></i>
+            <span style="color:rgba(255,255,255,0.75);font-size:.875rem;font-weight:500;">We respond to all enquiries within one working day, Monday through Friday.</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-item__label">For Applications</span>
+          <h4>Assessment Enquiries</h4>
+          <p>To apply for OOC certification, use the <a href="/apply">Apply Now page</a> or email us directly.</p>
+          <a href="mailto:assessment@organizationofchoice.com" style="color:var(--sage);font-size:.875rem;margin-top:.375rem;display:block;">assessment@organizationofchoice.com</a>
+        </div>
+
+        <div style="height:1px;background:var(--border);"></div>
+
+        <div class="contact-item">
+          <span class="contact-item__label">Media &amp; Press</span>
+          <h4>Press Enquiries</h4>
+          <a href="mailto:media@organizationofchoice.com">media@organizationofchoice.com</a>
+        </div>
+
+        <div style="height:1px;background:var(--border);"></div>
+
+        <div class="contact-item">
+          <span class="contact-item__label">Partnerships</span>
+          <h4>Partnership Enquiries</h4>
+          <a href="mailto:partnerships@organizationofchoice.com">partnerships@organizationofchoice.com</a>
+        </div>
+
+        <div style="height:1px;background:var(--border);"></div>
+
+        <div>
+          <span class="contact-item__label">Connect With Us</span>
+          <div style="display:flex;gap:.75rem;margin-top:.75rem;">
+            <a href="#" style="width:40px;height:40px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-size:.9rem;transition:all var(--dur);" onmouseover="this.style.borderColor='var(--sage)';this.style.color='var(--sage)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--ink-soft)'">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#" style="width:40px;height:40px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-size:.9rem;transition:all var(--dur);" onmouseover="this.style.borderColor='var(--sage)';this.style.color='var(--sage)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--ink-soft)'">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" style="width:40px;height:40px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-size:.9rem;transition:all var(--dur);" onmouseover="this.style.borderColor='var(--sage)';this.style.color='var(--sage)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--ink-soft)'">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ PROMPT -->
+<section class="section section-ivory">
+  <div class="container text-center">
+    <h3 style="margin-bottom:.75rem;">Looking for quick answers?</h3>
+    <p style="max-width:440px;margin:0 auto 1.75rem;">Browse our frequently asked questions — we have answers ready for the most common enquiries about the OOC program.</p>
+    <a href="/faq" class="btn btn-outline-dark">Visit the FAQ <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</section>
+
+{% endblock %}

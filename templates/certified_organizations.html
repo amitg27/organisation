@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% block title %}Certified Organizations — Organization of Choice™{% endblock %}
+{% block description %}Every organization listed here has completed the OOC assessment and met the independent criteria for certification.{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__inner">
+      <div class="section-label page-hero__label">Recognition Directory</div>
+      <h1 class="page-hero__title anim-fade-up">Organizations That Have<br><em>Earned Their Recognition</em></h1>
+      <p class="page-hero__sub anim-fade-up delay-1">Every organization listed here has completed the OOC assessment and met the independent criteria for certification. Browse by country, industry, or year.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SEARCH & DIRECTORY -->
+<section class="section section-cream">
+  <div class="container">
+
+    <!-- Search bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search by organization name&hellip;">
+      <select>
+        <option value="">All Countries</option>
+        <option>Australia</option><option>Canada</option><option>Germany</option>
+        <option>India</option><option>Singapore</option><option>United Kingdom</option>
+        <option>United States</option>
+      </select>
+      <select>
+        <option value="">All Industries</option>
+        <option>Technology</option><option>Healthcare</option>
+        <option>Professional Services</option><option>Education</option>
+        <option>Financial Services</option><option>Manufacturing</option>
+      </select>
+      <select>
+        <option value="">All Years</option>
+        <option>2026</option><option>2025</option><option>2024</option>
+        <option>2023</option><option>2022</option>
+      </select>
+      <button class="btn btn-dark btn-sm">Search</button>
+    </div>
+
+    <!-- Directory -->
+    <div class="grid-2" style="row-gap:1rem;">
+
+      <div class="cert-card">
+        <div class="cert-card__logo">TC</div>
+        <div class="cert-card__info">
+          <div class="cert-card__name">Thornfield Consulting Group</div>
+          <div class="cert-card__meta">Professional Services &middot; United Kingdom &middot; 2026</div>
+        </div>
+        <div>
+          <span class="cert-badge"><i class="fa-solid fa-circle-check" style="margin-right:.2rem;"></i> Certified</span>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-card__logo">AH</div>
+        <div class="cert-card__info">
+          <div class="cert-card__name">Arjun Healthcare Solutions</div>
+          <div class="cert-card__meta">Healthcare &middot; India &middot; 2026</div>
+        </div>
+        <div>
+          <span class="cert-badge"><i class="fa-solid fa-circle-check" style="margin-right:.2rem;"></i> Certified</span>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-card__logo">MB</div>
+        <div class="cert-card__info">
+          <div class="cert-card__name">Meridian Bank &amp; Financial</div>
+          <div class="cert-card__meta">Financial Services &middot; Canada &middot; 2025</div>
+        </div>
+        <div>
+          <span class="cert-badge"><i class="fa-solid fa-circle-check" style="margin-right:.2rem;"></i> Certified</span>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-card__logo">VT</div>
+        <div class="cert-card__info">
+          <div class="cert-card__name">Vantage Technologies Pte Ltd</div>
+          <div class="cert-card__meta">Technology &middot; Singapore &middot; 2025</div>
+        </div>
+        <div>
+          <span class="cert-badge"><i class="fa-solid fa-circle-check" style="margin-right:.2rem;"></i> Certified</span>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-card__logo">LW</div>
+        <div class="cert-card__info">
+          <div class="cert-card__name">Lakewood Education Trust</div>
+          <div class="cert-card__meta">Education &middot; Australia &middot; 2025</div>
+        </div>
+        <div>
+          <span class="cert-badge"><i class="fa-solid fa-circle-check" style="margin-right:.2rem;"></i> Certified</span>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-card__logo">BK</div>
+        <div class="cert-card__info">
+          <div class="cert-card__name">Berghaus &amp; Klein GmbH</div>
+          <div class="cert-card__meta">Manufacturing &middot; Germany &middot; 2024</div>
+        </div>
+        <div>
+          <span class="cert-badge"><i class="fa-solid fa-circle-check" style="margin-right:.2rem;"></i> Certified</span>
+        </div>
+      </div>
+
+    </div>
+
+    <p style="font-size:.8rem;color:var(--ink-muted);text-align:center;margin-top:2rem;font-style:italic;">
+      Showing a sample of certified organizations. The full directory will be available at launch.
+    </p>
+
+  </div>
+</section>
+
+<!-- VERIFY CALLOUT -->
+<section class="section">
+  <div class="container">
+    <div style="background:var(--mint-bg);border:1px solid var(--mint);border-radius:var(--r-xl);padding:3rem;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;">
+      <div>
+        <div class="section-label">Certificate Verification</div>
+        <h3 style="margin-bottom:.75rem;">Want to Verify an OOC Certificate?</h3>
+        <p style="max-width:560px;">Every OOC certificate carries a unique certificate ID and QR code. Scan the code or enter the certificate ID to instantly verify that a certificate is genuine, current, and issued by the Organization of Choice program.</p>
+      </div>
+      <div>
+        <a href="/verify" class="btn btn-dark btn-lg">Verify a Certificate <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Could Your Organization Be Listed Here?</h2>
+    <a href="/apply" class="btn btn-dark btn-lg">Apply for Assessment <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</section>
+
+{% endblock %}

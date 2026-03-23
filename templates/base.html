@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Organization of Choice™ — Global Workplace Recognition{% endblock %}</title>
+  <meta name="description" content="{% block description %}The global independent assessment and recognition program for outstanding workplaces. Certifying organizations where people choose to come, grow, and stay.{% endblock %}">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  {% block head_extra %}{% endblock %}
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="nav" id="main-nav">
+  <div class="container">
+    <div class="nav__inner">
+
+      <!-- Logo -->
+      <a href="/" class="nav__logo">
+        <div class="nav__logo-badge">OOC</div>
+        <div class="nav__logo-text">
+          <span class="nav__logo-name">Organization of Choice</span>
+          <span class="nav__logo-sub">Global Recognition Program</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav__links">
+
+        <li class="nav__item">
+          <a href="/about" class="nav__link {% if active == 'about' %}active{% endif %}">
+            About
+            <svg viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <div class="nav__dropdown">
+            <a href="/about">About OOC</a>
+            <a href="/our-team">Our Team</a>
+            <a href="/contact?subject=media">Media &amp; Press</a>
+          </div>
+        </li>
+
+        <li class="nav__item">
+          <a href="/why-get-certified" class="nav__link {% if active == 'get-certified' %}active{% endif %}">
+            Get Certified
+            <svg viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <div class="nav__dropdown">
+            <a href="/why-get-certified">Why Get Certified</a>
+            <a href="/certification-process">Certification Process</a>
+            <a href="/apply">Apply Now</a>
+          </div>
+        </li>
+
+        <li class="nav__item">
+          <a href="/certified-organizations" class="nav__link {% if active == 'certified' %}active{% endif %}">
+            Certified Organizations
+            <svg viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <div class="nav__dropdown">
+            <a href="/certified-organizations">All Certified Organizations</a>
+            <a href="/verify">Verify a Certificate</a>
+          </div>
+        </li>
+
+        <li class="nav__item">
+          <a href="/insights" class="nav__link {% if active == 'insights' %}active{% endif %}">
+            Insights
+            <svg viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <div class="nav__dropdown">
+            <a href="/insights">Blog &amp; Articles</a>
+            <a href="/insights">Research Reports</a>
+            <a href="/insights">Case Studies</a>
+          </div>
+        </li>
+
+        <li class="nav__item">
+          <a href="/events" class="nav__link {% if active == 'events' %}active{% endif %}">Events</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="/faq" class="nav__link {% if active == 'faq' %}active{% endif %}">FAQ</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="/contact" class="nav__link {% if active == 'contact' %}active{% endif %}">Contact</a>
+        </li>
+
+      </ul>
+
+      <!-- CTA -->
+      <div class="nav__cta-wrap">
+        <a href="/apply" class="nav__cta">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="nav__mobile" id="nav-mobile">
+  <span class="mobile-section">About</span>
+  <a href="/about">About OOC</a>
+  <a href="/our-team">Our Team</a>
+
+  <span class="mobile-section">Get Certified</span>
+  <a href="/why-get-certified">Why Get Certified</a>
+  <a href="/certification-process">Certification Process</a>
+
+  <span class="mobile-section">Recognition</span>
+  <a href="/certified-organizations">Certified Organizations</a>
+  <a href="/verify">Verify a Certificate</a>
+
+  <span class="mobile-section">Explore</span>
+  <a href="/insights">Insights &amp; Research</a>
+  <a href="/events">Events</a>
+  <a href="/faq">FAQ</a>
+  <a href="/contact">Contact</a>
+
+  <a href="/apply" class="mobile-cta">Apply for Assessment <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+
+<!-- ===== PAGE CONTENT ===== -->
+<main>
+  {% block content %}{% endblock %}
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer__top">
+
+      <!-- Brand -->
+      <div class="footer__brand">
+        <a href="/" class="nav__logo" style="margin-bottom:.25rem;">
+          <div class="nav__logo-badge">OOC</div>
+          <div class="nav__logo-text">
+            <span class="nav__logo-name">Organization of Choice</span>
+            <span class="nav__logo-sub">™</span>
+          </div>
+        </a>
+        <p>The global standard for independent workplace recognition. We exist to make great workplaces visible — everywhere.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Get Certified -->
+      <div class="footer__col">
+        <h5>Get Certified</h5>
+        <ul>
+          <li><a href="/why-get-certified">Why Get Certified</a></li>
+          <li><a href="/certification-process">Certification Process</a></li>
+          <li><a href="/apply">Apply for Assessment</a></li>
+        </ul>
+      </div>
+
+      <!-- Explore -->
+      <div class="footer__col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="/certified-organizations">Certified Organizations</a></li>
+          <li><a href="/verify">Verify a Certificate</a></li>
+          <li><a href="/insights">Insights &amp; Research</a></li>
+          <li><a href="/events">Events</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="footer__col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about">About OOC</a></li>
+          <li><a href="/our-team">Our Team</a></li>
+          <li><a href="/contact?subject=media">Media &amp; Press</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Organization of Choice™. All Rights Reserved.</p>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="/verify">Verify a Certificate</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% block scripts %}{% endblock %}
+
+</body>
+</html>

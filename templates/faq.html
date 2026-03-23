@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% block title %}FAQ — Organization of Choice™{% endblock %}
+{% block description %}Everything you need to know before you apply for OOC certification. Answers to the most common questions about the assessment, certification, and pricing.{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__inner">
+      <div class="section-label page-hero__label">Frequently Asked Questions</div>
+      <h1 class="page-hero__title anim-fade-up">Everything You Need to Know<br><em>Before You Apply</em></h1>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-cream">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 2fr;gap:4rem;align-items:start;">
+
+      <!-- Sidebar nav -->
+      <div style="position:sticky;top:calc(var(--nav-h) + 2rem);">
+        <p style="font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">Jump to Section</p>
+        <div style="display:flex;flex-direction:column;gap:.375rem;">
+          <a href="#about-program" style="font-size:.875rem;color:var(--ink-soft);padding:.5rem .875rem;border-radius:var(--r-sm);border:1px solid var(--border);background:var(--white);transition:all var(--dur);" onmouseover="this.style.background='var(--mint-bg)'" onmouseout="this.style.background='var(--white)'">About the Program</a>
+          <a href="#assessment" style="font-size:.875rem;color:var(--ink-soft);padding:.5rem .875rem;border-radius:var(--r-sm);border:1px solid var(--border);background:var(--white);transition:all var(--dur);" onmouseover="this.style.background='var(--mint-bg)'" onmouseout="this.style.background='var(--white)'">The Assessment Process</a>
+          <a href="#certification" style="font-size:.875rem;color:var(--ink-soft);padding:.5rem .875rem;border-radius:var(--r-sm);border:1px solid var(--border);background:var(--white);transition:all var(--dur);" onmouseover="this.style.background='var(--mint-bg)'" onmouseout="this.style.background='var(--white)'">Certification &amp; Certificate</a>
+          <a href="#pricing" style="font-size:.875rem;color:var(--ink-soft);padding:.5rem .875rem;border-radius:var(--r-sm);border:1px solid var(--border);background:var(--white);transition:all var(--dur);" onmouseover="this.style.background='var(--mint-bg)'" onmouseout="this.style.background='var(--white)'">Pricing &amp; Getting Started</a>
+        </div>
+        <div style="margin-top:2rem;padding:1.5rem;background:var(--forest);border-radius:var(--r-lg);">
+          <p style="font-size:.8rem;color:rgba(255,255,255,0.6);margin-bottom:1rem;line-height:1.65;">Can't find your answer here?</p>
+          <a href="/contact" class="btn btn-primary btn-sm" style="width:100%;justify-content:center;">Ask Us Directly</a>
+        </div>
+      </div>
+
+      <!-- FAQ content -->
+      <div>
+
+        <!-- Group 1 -->
+        <div class="faq-section" id="about-program">
+          <p class="faq-group-label">About the Program</p>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-trigger">What is Organization of Choice?<span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span></button>
+              <div class="accordion-body"><p>Organization of Choice (OOC) is an independent global assessment and recognition program that certifies organizations — of all sizes and sectors — that demonstrate genuine excellence in workplace culture, leadership, and employee experience.</p></div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger">Who is OOC designed for?<span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span></button>
+              <div class="accordion-body"><p>OOC is designed for any organization in the world that is committed to building a great workplace and wants independent recognition for what they have built. We work with organizations across all industries, from small businesses to large enterprises.</p></div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger">Is OOC affiliated with any government body, employer association, or commercial platform?<span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span></button>
+              <div class="accordion-body"><p>No. OOC is fully independent. Our assessments are conducted independently and our recognition reflects only what organizations earn through the assessment process.</p></div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger">How is OOC different from other workplace recognition programs?<span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span></button>
+              <div class="accordion-body"><p>OOC is criteria-based, not ranking-based. Every organization that meets our independent certification threshold receives recognition — the outcome is not limited to a fixed number of top performers. We also assess four stakeholder groups rather than employees alone, giving a more complete picture of your workplace.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Group 2 -->
+        <div class="faq-section" id="assessment">
+          <p class="faq-group-label">The Assessment Process</p>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-trigger">Who participates in the assessment?<span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span></button>
+              <div class="accordion-body"><p>The OOC assessment captures input from four groups: your senior leadership and owners (online self-assessment), your employees (anonymous survey), your management team (survey), and your customers or external partners (survey).</p></div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger">Do employees need to create accounts or share personal information?<span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span></button>
+              <div class="accordion-body"><p>No. All employee and customer surveys are completely anonymous. Respondents receive a link and complete the survey without creating any account or sharing any personal data. No individual responses are ever attributed to a named person.</p></div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger">How long does the assessment take?<span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span></button>
+              <div class="accordion-body"><p>The leadership self-assessment typically takes 45 to 60 minutes. Employee and customer surveys take 10 to 15 minutes each. The full process — from registration to receiving your certificate — typically takes 3 to 6 weeks.</p></div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger">What happens after all surveys are submitted?<span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span></button>
+              <div class="accordion-body"><p>Our certified assessors review all responses, compute module-wise scores, and prepare your organization's detailed assessment report. You receive your report and certificate within 10 working days of survey completion.</p></div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger">What if our employees complete surveys in different languages?<span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span></button>
+              <div class="accordion-body"><p>Please contact our team to discuss multilingual survey options. We work with organizations globally and can accommodate a range of language requirements.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Group 3 -->
+        <div class="faq-section" id="certification">
+          <p class="faq-group-label">Certification &amp; the Certificate</p>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-trigger">What do we receive if we are certified?<span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span></button>
+              <div class="accordion-body"><p>Certified organizations receive: a detailed assessment report with module-wise scores and recommendations, official recognition status, a digital certificate with unique certificate ID and QR verification code, a shareable digital badge, and a social media announcement kit.</p></div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger">How long is the certification valid?<span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span></button>
+              <div class="accordion-body"><p>OOC certification is valid for one year from the date of issue. Renewal reminders are sent at 90, 60, and 30 days before your certification expires.</p></div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger">Can anyone verify our OOC certificate?<span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span></button>
+              <div class="accordion-body"><p>Yes. Every OOC certificate contains a unique ID and QR code. Anyone — a candidate, a client, a partner — can scan the code or visit our <a href="/verify" style="color:var(--sage);text-decoration:underline;">verification page</a> to instantly confirm the certificate is genuine and currently valid.</p></div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger">What happens if we do not meet the certification criteria?<span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span></button>
+              <div class="accordion-body"><p>Organizations that do not achieve certification receive a full gap analysis report with specific, prioritized recommendations. Many organizations that initially miss the threshold use their report to improve and are successfully certified in their next assessment cycle.</p></div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger">Can we renew our certification each year?<span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span></button>
+              <div class="accordion-body"><p>Yes. Annual renewal is available. Renewing organizations receive a fresh assessment, updated report, new certificate, and year-on-year trend data showing how their scores have evolved.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Group 4 -->
+        <div class="faq-section" id="pricing">
+          <p class="faq-group-label">Pricing &amp; Getting Started</p>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-trigger">How much does OOC certification cost?<span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span></button>
+              <div class="accordion-body"><p>Pricing is tailored to your organization's size and requirements. Please contact our team or submit an application and we will share all details during your onboarding conversation.</p></div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger">Is there a commitment at the application stage?<span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span></button>
+              <div class="accordion-body"><p>No. Submitting an application is simply an expression of interest. There is no payment or commitment required at that stage. Our team will walk you through all details before you make any decision.</p></div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger">How do we get started?<span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span></button>
+              <div class="accordion-body"><p>Click <a href="/apply" style="color:var(--sage);text-decoration:underline;">Apply for Assessment</a> on any page of this website, complete the short enquiry form, and our team will be in touch within 48 working hours.</p></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container text-center">
+    <h2>Still have questions?</h2>
+    <p style="color:rgba(13,32,22,0.65);max-width:440px;margin:0 auto 2rem;font-size:1rem;">Our team responds to all enquiries within one working day. We would love to hear from you.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="/contact" class="btn btn-dark btn-lg">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="/apply" class="btn btn-outline btn-lg" style="border-color:rgba(13,32,22,0.3);color:var(--forest);">Apply Now</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

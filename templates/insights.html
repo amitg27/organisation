@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% block title %}Insights — Organization of Choice™{% endblock %}
+{% block description %}Perspectives on workplace culture, leadership, employee experience, and the organizations that are getting it right.{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__inner">
+      <div class="section-label page-hero__label">Insights</div>
+      <h1 class="page-hero__title anim-fade-up">Thinking About What Makes<br>Workplaces <em>Worth Choosing</em></h1>
+      <p class="page-hero__sub anim-fade-up delay-1">Perspectives on workplace culture, leadership, employee experience, and the organizations that are getting it right.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLES -->
+<section class="section section-cream">
+  <div class="container">
+
+    <!-- Filter tabs -->
+    <div class="filter-tabs">
+      <button class="filter-tab active">All</button>
+      <button class="filter-tab">Culture &amp; Leadership</button>
+      <button class="filter-tab">Employee Experience</button>
+      <button class="filter-tab">Employer Branding</button>
+      <button class="filter-tab">Research &amp; Data</button>
+      <button class="filter-tab">OOC News</button>
+    </div>
+
+    <!-- Featured article -->
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--r-xl);overflow:hidden;margin-bottom:2.5rem;display:grid;grid-template-columns:1.2fr 1fr;box-shadow:var(--sh);">
+      <div style="background:linear-gradient(135deg,var(--pine),var(--forest));padding:4rem;display:flex;align-items:center;justify-content:center;min-height:320px;position:relative;">
+        <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 70% 30%,rgba(40,104,72,0.5),transparent);"></div>
+        <div style="position:relative;z-index:1;text-align:center;">
+          <div style="font-family:var(--f-display);font-size:5rem;font-weight:700;color:rgba(255,255,255,0.1);line-height:1;">OOC</div>
+          <div style="font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:var(--gold-light);margin-top:.5rem;">Featured Article</div>
+        </div>
+      </div>
+      <div style="padding:3rem;">
+        <div class="article-card__cat" style="margin-bottom:1rem;">Culture &amp; Leadership</div>
+        <h2 style="font-size:clamp(1.4rem,2.5vw,1.9rem);margin-bottom:1rem;color:var(--ink);">What Does It Mean to Be an Organization of Choice?</h2>
+        <p style="font-size:.925rem;color:var(--ink-soft);line-height:1.7;margin-bottom:1.75rem;">An exploration of the mindset, habits, and culture that define workplaces people actively choose rather than reluctantly accept.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:.775rem;color:var(--ink-muted);">March 2026 &middot; 8 min read</span>
+          <a href="#" class="btn btn-outline-dark btn-sm">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Article grid -->
+    <div class="grid-3">
+
+      <div class="article-card">
+        <div class="article-card__img">
+          <div class="article-card__img-bg">
+            <i class="fa-solid fa-star article-card__img-icon"></i>
+          </div>
+          <span class="article-card__cat-badge">Culture &amp; Leadership</span>
+        </div>
+        <div class="article-card__body">
+          <div class="article-card__title">The Difference Between a Good Workplace and a Great One</div>
+          <p class="article-card__excerpt">Why most organizations settle for adequate when exceptional is within reach — and what the gap really costs.</p>
+          <div class="article-card__footer">
+            <span class="article-card__date">March 2026 &middot; 6 min read</span>
+            <a href="#" class="btn-ghost btn" style="font-size:.775rem;">Read <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <div class="article-card__img">
+          <div class="article-card__img-bg" style="background:linear-gradient(135deg,#1a4a3a,#0d2016);">
+            <i class="fa-solid fa-comments article-card__img-icon"></i>
+          </div>
+          <span class="article-card__cat-badge">Employee Experience</span>
+        </div>
+        <div class="article-card__body">
+          <div class="article-card__title">5 Questions That Will Tell You If Your Employees Think You Are a Great Place to Work</div>
+          <p class="article-card__excerpt">Practical questions every leader should be asking — and how to listen to the answers honestly.</p>
+          <div class="article-card__footer">
+            <span class="article-card__date">February 2026 &middot; 5 min read</span>
+            <a href="#" class="btn-ghost btn" style="font-size:.775rem;">Read <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <div class="article-card__img">
+          <div class="article-card__img-bg" style="background:linear-gradient(135deg,#2d4a1e,#163829);">
+            <i class="fa-solid fa-award article-card__img-icon"></i>
+          </div>
+          <span class="article-card__cat-badge">Employer Branding</span>
+        </div>
+        <div class="article-card__body">
+          <div class="article-card__title">Why Independent Certification Outperforms Self-Declared Awards</div>
+          <p class="article-card__excerpt">The growing credibility gap between organizations that claim to be great places to work and those that can prove it.</p>
+          <div class="article-card__footer">
+            <span class="article-card__date">January 2026 &middot; 7 min read</span>
+            <a href="#" class="btn-ghost btn" style="font-size:.775rem;">Read <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <div class="article-card__img">
+          <div class="article-card__img-bg" style="background:linear-gradient(135deg,#163829,#0a2c1a);">
+            <i class="fa-solid fa-chart-bar article-card__img-icon"></i>
+          </div>
+          <span class="article-card__cat-badge">Research &amp; Data</span>
+        </div>
+        <div class="article-card__body">
+          <div class="article-card__title">The Business Case for Investing in Workplace Culture</div>
+          <p class="article-card__excerpt">What the research says about the relationship between employee experience and organizational performance.</p>
+          <div class="article-card__footer">
+            <span class="article-card__date">January 2026 &middot; 9 min read</span>
+            <a href="#" class="btn-ghost btn" style="font-size:.775rem;">Read <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <div class="article-card__img">
+          <div class="article-card__img-bg" style="background:linear-gradient(135deg,#1e3a2a,#0d2016);">
+            <i class="fa-solid fa-globe article-card__img-icon"></i>
+          </div>
+          <span class="article-card__cat-badge">OOC News</span>
+        </div>
+        <div class="article-card__body">
+          <div class="article-card__title">OOC Expands Global Assessor Network to 45 Countries</div>
+          <p class="article-card__excerpt">The Organization of Choice program continues to grow, welcoming new certified assessors from Asia-Pacific, Africa, and Latin America.</p>
+          <div class="article-card__footer">
+            <span class="article-card__date">December 2025 &middot; 3 min read</span>
+            <a href="#" class="btn-ghost btn" style="font-size:.775rem;">Read <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card" style="background:var(--mint-bg);border-style:dashed;display:flex;align-items:center;justify-content:center;text-align:center;min-height:280px;">
+        <div style="padding:2rem;">
+          <div style="font-size:2rem;color:var(--leaf);margin-bottom:1rem;"><i class="fa-solid fa-pen-nib"></i></div>
+          <h4 style="color:var(--pine);margin-bottom:.5rem;">More articles coming soon</h4>
+          <p style="font-size:.825rem;color:var(--sage);">We publish new research and perspectives monthly.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER CTA -->
+<section class="section section-pine">
+  <div class="container text-center">
+    <div class="section-label" style="justify-content:center;color:var(--gold-light);">Stay Informed</div>
+    <h2 style="color:var(--white);margin-bottom:1rem;">Insights Delivered to Your Inbox</h2>
+    <p style="color:rgba(255,255,255,0.62);max-width:480px;margin:0 auto 2rem;">Monthly perspectives on workplace culture, research findings, and OOC program updates.</p>
+    <div style="display:flex;gap:0;max-width:440px;margin:0 auto;border:1.5px solid rgba(255,255,255,0.2);border-radius:var(--r-full);overflow:hidden;">
+      <input type="email" placeholder="your@email.com" style="flex:1;border:none;padding:.875rem 1.25rem;background:rgba(255,255,255,0.08);color:var(--white);font-size:.9rem;outline:none;min-width:0;">
+      <button class="btn btn-primary" style="border-radius:0;white-space:nowrap;">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

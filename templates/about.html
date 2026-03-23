@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block title %}About OOC — Organization of Choice™{% endblock %}
+{% block description %}Organization of Choice was built to give the world's best workplaces the independent recognition they have earned — regardless of size, industry, or location.{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__inner">
+      <div class="section-label page-hero__label">About</div>
+      <h1 class="page-hero__title anim-fade-up">We Believe Every Great Workplace<br><em>Deserves to Be Known</em></h1>
+      <p class="page-hero__sub anim-fade-up delay-1">Organization of Choice was built for one reason: to give the world's best workplaces the independent recognition they have earned — regardless of their size, industry, or location.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OUR STORY -->
+<section class="section section-cream">
+  <div class="container">
+    <div class="grid-2-1" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+      <div>
+        <div class="section-label">Our Story</div>
+        <span class="gold-rule"></span>
+        <h2 style="margin-bottom:1.5rem;">Why We Built This</h2>
+        <p style="margin-bottom:1.25rem;font-size:1.05rem;">
+          Across the world, there are organizations doing extraordinary work for their people. Organizations that invest in their culture, lead with integrity, listen to their employees, and build something their teams are genuinely proud of.
+        </p>
+        <p style="margin-bottom:1.25rem;">
+          Yet most of these organizations go unrecognized — either because existing recognition programs are too expensive, too complex, or built only for the largest enterprises.
+        </p>
+        <p>
+          Organization of Choice was built to change that. We created a program that is rigorous enough to mean something, accessible enough for organizations of every size, and global enough to matter wherever your organization operates.
+        </p>
+      </div>
+      <div>
+        <!-- Visual accent block -->
+        <div style="background:var(--forest);border-radius:var(--r-xl);padding:3rem;text-align:center;position:relative;overflow:hidden;">
+          <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 70% at 50% 30%,rgba(40,104,72,0.4),transparent);"></div>
+          <div style="position:relative;z-index:1;">
+            <div style="font-family:var(--f-display);font-size:4rem;font-weight:700;color:var(--gold-light);line-height:1;margin-bottom:1rem;">OOC</div>
+            <div style="width:48px;height:2px;background:var(--gold-mid);margin:0 auto 1.5rem;"></div>
+            <p style="color:rgba(255,255,255,0.65);font-style:italic;font-family:var(--f-display);font-size:1.1rem;line-height:1.6;">
+              "Rigorous enough to mean something. Accessible enough for every organization."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION & VISION -->
+<section class="section">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <div class="section-label" style="justify-content:center;">Purpose</div>
+      <span class="gold-rule gold-rule--center"></span>
+      <h2>Mission &amp; Vision</h2>
+    </div>
+    <div class="grid-2">
+      <div class="card" style="border-top:4px solid var(--gold-mid);">
+        <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+        <h3 style="margin-bottom:1rem;">Our Mission</h3>
+        <p style="font-size:1rem;">To recognize organizations worldwide that have built workplaces where people genuinely choose to belong — and to help all organizations aspire to that standard.</p>
+      </div>
+      <div class="card" style="border-top:4px solid var(--sage);">
+        <div class="card-icon"><i class="fa-solid fa-eye"></i></div>
+        <h3 style="margin-bottom:1rem;">Our Vision</h3>
+        <p style="font-size:1rem;">A world where every organization — from a ten-person startup to a ten-thousand-person enterprise — has access to a credible, meaningful standard of workplace excellence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section section-ivory">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">What We Stand For</div>
+      <span class="gold-rule"></span>
+      <h2>Our Values</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-item">
+        <div class="value-item__icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h4>Independence</h4>
+        <p>OOC is not affiliated with any employer, recruiting platform, or commercial interest. Our assessments are conducted independently and our recognition reflects only what organizations genuinely earn.</p>
+      </div>
+      <div class="value-item">
+        <div class="value-item__icon"><i class="fa-solid fa-door-open"></i></div>
+        <h4>Accessibility</h4>
+        <p>World-class recognition should not be limited to the world's largest organizations. OOC is designed for organizations of all sizes — and priced to reflect that.</p>
+      </div>
+      <div class="value-item">
+        <div class="value-item__icon"><i class="fa-solid fa-scale-balanced"></i></div>
+        <h4>Integrity</h4>
+        <p>No paid placements. No sponsored rankings. No recognition without assessment. Every OOC-certified organization has earned their status through the same rigorous process.</p>
+      </div>
+      <div class="value-item">
+        <div class="value-item__icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h4>Impact</h4>
+        <p>Recognition without insight is just a trophy. OOC certification comes with a detailed assessment report that helps organizations understand exactly where they excel — and where to grow.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Ready to find out where your organization stands?</h2>
+    <a href="/why-get-certified" class="btn btn-dark btn-lg">Learn About the Assessment <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</section>
+
+{% endblock %}
